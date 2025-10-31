@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jsy.lease.mapper.ApartmentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jsy.lease.model.entity.ApartmentInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="introduction" property="introduction" />
+        <result column="district_id" property="districtId" />
+        <result column="district_name" property="districtName" />
+        <result column="city_id" property="cityId" />
+        <result column="city_name" property="cityName" />
+        <result column="province_id" property="provinceId" />
+        <result column="province_name" property="provinceName" />
+        <result column="address_detail" property="addressDetail" />
+        <result column="latitude" property="latitude" />
+        <result column="longitude" property="longitude" />
+        <result column="phone" property="phone" />
+        <result column="is_release" property="isRelease" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+</mapper>

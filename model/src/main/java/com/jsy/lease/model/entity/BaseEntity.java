@@ -19,13 +19,16 @@ public class BaseEntity implements Serializable {
     @TableField(value = "create_time",fill = FieldFill.INSERT)
     @JsonIgnore
     private Date createTime;
-    @TableField(value = "update_time",fill = FieldFill.UPDATE)
+
     @Schema(description = "更新时间")
+    @TableField(value = "update_time",fill = FieldFill.UPDATE)
     @JsonIgnore
     private Date updateTime;
-    @JsonIgnore
-    @TableField("is_deleted")
-    @TableLogic
+
     @Schema(description = "逻辑删除")
-    private  Byte isDelete;
+    @JsonIgnore
+    @TableLogic
+    @TableField("is_deleted")
+    private Byte isDeleted;
+
 }
