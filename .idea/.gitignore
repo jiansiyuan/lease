@@ -21,7 +21,7 @@ dataSources.local.xml
 # ===============================
 # Maven / Gradle / 编译输出
 # ===============================
-target/
+**/target/
 out/
 build/
 
